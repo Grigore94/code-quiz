@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+
+    <container class="content">
+
+        <nav class="navbar navbar-light bg-light">
+
+            <div id="high-score">
+                <button type="button" class="btn btn-link">High Score</button>
+            </div>
+
+            <div id="countdown">Time: 0</div>
+
+        </nav>
+
+        <div id="intro">
+            <h1 class="header">Welcome!</h1>
+
+            <p class="instructive-text">Test your coding knowledge with this simple quiz! You will be asked to answer a series of 5 questions about
+                coding.
+                Using the knowledge you've gained since the start of Bootcamp, choose between the 4 options. You
+                have 75
+                seconds to complete the quiz. You will be given a score based on how quickly you finish the quiz.
+                Upon
+                completion, enter your initials to log your score.
+
+            </p>
+
+            <div class="button-container">
+                <button type="button" id="start-button" class="btn btn-primary">Start Quiz</button>
+            </div>
+
+        </div>
+
+
+        <div id="choices">
+            <h2 class="question" id="questionsHeader">Do i still have any energy to dedicate to this homework?</h2>
+
+            <div id="answer-buttons">
+                <div class="button-container">
+                <button type="button" id="choice1" class="btn btn-primary">No</button>
+            
+                <button type="button" id="choice2" class="btn btn-primary">No</button>
+            
+                <button type="button" id="choice3" class="btn btn-primary">No</button>
+            
+                <button type="button" id="choice4" class="btn btn-primary">No</button>
+            </div>
+            </div>
+
+            <div id="answerIndicator">
+                <br>
+                <hr>
+
+                <p id="indicatorText"></p>
+            </div>
+        </div>
+
+        <div id="times-up">
+            <h2>Time's up!</h2>
+            <button type="button" id="try-again" class="btn btn-primary">Try Again!</button>
+
+        </div>
+
+        <div id="high-scores">
+            <h2>High Scores</h2>
+            <div class="list-group" id="attachHS"></div> 
+            <button type="button" class="btn btn-primary" id="back">Back</button>
+            <button type="button" class="btn btn-primary" id="clearHS">Clear High Scores</button>
+        </div>
+
+        <div class="col-sm-4 text-center" id="endingScore" style = "display: none; margin-left: auto; margin-right: auto;">
+            <h2>Quiz Complete!</h2>
+            <p id="scoreText"></p>
+                <p class="mr-2">Enter Your Initials<p>
+                <input type="text" class="mr-2" id="initials">
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </div>
+
+
+
+    </container>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
